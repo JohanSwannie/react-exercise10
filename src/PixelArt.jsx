@@ -68,7 +68,7 @@ const Pixels = () => {
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "repeat(20, 1fr",
+        gridTemplateColumns: "repeat(20, 1fr)",
         width: "800px",
         margin: "0 auto",
       }}
