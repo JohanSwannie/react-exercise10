@@ -53,7 +53,7 @@ const Pixel = () => {
         height: "2.25rem",
         width: "2.25rem",
         backgroundColor: `${pixelColor}`,
-        margin: "1.5px",
+        border: "1px solid #FFFFDF",
       }}
     />
   );
@@ -61,16 +61,16 @@ const Pixel = () => {
 
 const Pixels = () => {
   const pixels = [];
-  for (let i = 0; i < 280; i++) {
+  for (let i = 0; i < 450; i++) {
     pixels.push(<Pixel />);
   }
   return (
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "repeat(20, 1fr)",
-        width: "800px",
-        margin: "0 auto",
+        gridTemplateColumns: "repeat(30, 1fr)",
+        width: "80vw",
+        margin: "auto",
       }}
     >
       {pixels}
