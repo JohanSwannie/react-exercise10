@@ -71,6 +71,7 @@ const Pixels = () => {
         gridTemplateColumns: "repeat(30, 1fr)",
         width: "80vw",
         margin: "auto",
+        border: "5px solid gray",
       }}
     >
       {pixels}
