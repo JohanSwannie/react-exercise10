@@ -23,7 +23,6 @@ const topScreenColors = [
 
 const ColorPicker = () => {
   const { setColor } = useContext(ColorContext);
-
   return (
     <div>
       <h2 style={{ marginBottom: "1.5rem" }}>Choose a color</h2>
