@@ -50,8 +50,8 @@ const Pixel = () => {
     <div
       onClick={() => setPixelColor(color)}
       style={{
-        height: "2.57rem",
-        width: "2.75rem",
+        height: "1rem",
+        width: "1rem",
         backgroundColor: `${pixelColor}`,
         border: "1px solid #FFFFDF",
       }}
@@ -61,14 +61,14 @@ const Pixel = () => {
 
 const Pixels = () => {
   const pixels = [];
-  for (let i = 0; i < 450; i++) {
+  for (let i = 0; i < 3040; i++) {
     pixels.push(<Pixel />);
   }
   return (
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "repeat(30, 1fr)",
+        gridTemplateColumns: "repeat(80, 1fr)",
         width: "90vw",
         margin: "auto",
         border: "5px solid gray",
