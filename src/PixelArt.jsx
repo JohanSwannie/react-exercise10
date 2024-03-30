@@ -7,7 +7,7 @@ const ColorContext = createContext({
 
 const ColorPicker = () => {
   const { setColor } = useContext(ColorContext);
-  const colors = [
+  const topScreenColors = [
     "red",
     "green",
     "blue",
@@ -26,12 +26,12 @@ const ColorPicker = () => {
   return (
     <div>
       <h2 style={{ marginBottom: "1.5rem" }}>Choose a color</h2>
-      {colors.map((color) => (
+      {topScreenColors.map((tsColor) => (
         <button
-          onClick={() => setColor(color)}
-          key={color}
+          onClick={() => setColor(tsColor)}
+          key={tsColor}
           style={{
-            backgroundColor: `${color}`,
+            backgroundColor: `${tsColor}`,
             width: "1.5rem",
             height: "1.5rem",
             marginRight: "5px",
@@ -50,8 +50,8 @@ const Pixel = () => {
     <div
       onClick={() => setPixelColor(color)}
       style={{
-        height: "2.25rem",
-        width: "2.25rem",
+        height: "2.57rem",
+        width: "2.75rem",
         backgroundColor: `${pixelColor}`,
         border: "1px solid #FFFFDF",
       }}
@@ -69,7 +69,7 @@ const Pixels = () => {
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(30, 1fr)",
-        width: "80vw",
+        width: "90vw",
         margin: "auto",
         border: "5px solid gray",
       }}
@@ -79,7 +79,7 @@ const Pixels = () => {
   );
 };
 
-export default function PixelArt() {
+const PixelArt = () => {
   const [color, setColor] = useState("lightgray");
   return (
     <ColorContext.Provider value={{ color, setColor }}>
@@ -87,4 +87,6 @@ export default function PixelArt() {
       <Pixels />
     </ColorContext.Provider>
   );
-}
+};
+
+export default PixelArt;
