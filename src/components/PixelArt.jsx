@@ -80,7 +80,7 @@ const Pixels = () => {
 };
 
 const PixelArt = () => {
-  const [color, setColor] = useState("lightgray");
+  const [color, setColor] = useState("");
   return (
     <ColorContext.Provider value={{ color, setColor }}>
       <ColorPicker />
