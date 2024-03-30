@@ -5,23 +5,24 @@ const ColorContext = createContext({
   setColor: () => {},
 });
 
+const topScreenColors = [
+  "red",
+  "green",
+  "blue",
+  "yellow",
+  "purple",
+  "black",
+  "crimson",
+  "pink",
+  "olive",
+  "lightseagreen",
+  "peachpuff",
+  "tomato",
+  "lightgray",
+];
+
 const ColorPicker = () => {
   const { setColor } = useContext(ColorContext);
-  const topScreenColors = [
-    "red",
-    "green",
-    "blue",
-    "yellow",
-    "purple",
-    "black",
-    "crimson",
-    "pink",
-    "olive",
-    "lightseagreen",
-    "peachpuff",
-    "tomato",
-    "lightgray",
-  ];
 
   return (
     <div>
