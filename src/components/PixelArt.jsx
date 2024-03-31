@@ -53,7 +53,7 @@ const Pixel = () => {
         height: "1rem",
         width: "1rem",
         backgroundColor: `${pixelColor}`,
-        border: "1px solid #FFFFDF",
+        border: "1px solid #eeeeff",
       }}
     />
   );
